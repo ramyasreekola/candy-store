@@ -24,8 +24,7 @@ Before you begin, ensure you have installed Go (version 1.16 or later is recomme
 To start the service, clone the code and run:
 
 ```bash=
-git clone [repository URL]
-cd candystore
+git clone https://github.com/ramyasreekola/candy-store
 go run main.go
 ```
 This will start the server on http://localhost:3000. The service can be accessed via the `/api/candy` endpoint.
@@ -49,7 +48,7 @@ These instructions will get you a copy of the project up and running locally.
 #### Installation
 Clone the repository:
 ```bash
-cd candystore/web
+cd candy-store/web
 ```
 Install dependencies and start dev server:
 

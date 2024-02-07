@@ -27,10 +27,10 @@ type CustomTime struct {
 const dateFormat = "2006-01-02"
 
 func (ct *CustomTime) UnmarshalJSON(input []byte) error {
-	if len(input) < 3 { // Considering the quotes and at least one character for date
+	if len(input) < 3 { 
 		return fmt.Errorf("invalid date: %s", input)
 	}
-	strInput := string(input[1 : len(input)-1]) // No need to reassign
+	strInput := string(input[1 : len(input)-1]) 
 	newTime, err := time.Parse(dateFormat, strInput)
 	if err != nil {
 		return fmt.Errorf("parse time error: %v for input %s", err, strInput)
