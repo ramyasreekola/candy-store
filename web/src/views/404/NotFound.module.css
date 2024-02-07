@@ -1,0 +1,11 @@
+.header {
+    color:rgb(67, 39, 6);
+    font-size: x-large;
+    padding: 5vh 5vh 0;
+}
+
+.body {
+    color:rgb(67, 39, 6);
+    font-size: large;
+    padding: 0 5vh;
+}
